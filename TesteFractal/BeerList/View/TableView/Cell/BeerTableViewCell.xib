@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="NDo-VX-Qbs" customClass="BeerTableViewCell" customModule="TesteFractal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NDo-VX-Qbs" id="rTH-Ay-DBB">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Mr-0C-926" userLabel="Card">
+                        <rect key="frame" x="8" y="6" width="343" height="57.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYJ-cy-ojR" userLabel="SideView" customClass="RoundedView" customModule="TesteFractal" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="5" height="57.5"/>
+                                <color key="backgroundColor" red="0.34117648010000001" green="0.62352943419999995" blue="0.16862745579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="SZ4-hE-nCb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="vPm-4h-8yo" userLabel="Beer name label">
+                                <rect key="frame" x="24" y="8" width="263" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <color key="textColor" red="0.24310663339999999" green="0.24315488339999999" blue="0.2431035936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tagline" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="uEn-J9-1mi" userLabel="Tagline label">
+                                <rect key="frame" x="24" y="33" width="263" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <color key="textColor" red="0.7293313146" green="0.72945815319999996" blue="0.72932332749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tst" translatesAutoresizingMaskIntoConstraints="NO" id="ETw-6F-sPE">
+                                <rect key="frame" x="295" y="9" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="bMw-Zx-u9n"/>
+                                    <constraint firstAttribute="height" constant="40" id="oFI-W2-PP9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vPm-4h-8yo" firstAttribute="leading" secondItem="3Mr-0C-926" secondAttribute="leading" constant="24" id="2C6-cc-MxJ"/>
+                            <constraint firstItem="uEn-J9-1mi" firstAttribute="leading" secondItem="3Mr-0C-926" secondAttribute="leading" constant="24" id="3WA-8X-irM"/>
+                            <constraint firstItem="vPm-4h-8yo" firstAttribute="top" secondItem="3Mr-0C-926" secondAttribute="top" constant="8" id="EKX-JV-3X7"/>
+                            <constraint firstItem="ETw-6F-sPE" firstAttribute="centerY" secondItem="3Mr-0C-926" secondAttribute="centerY" id="LyI-Ec-QC5"/>
+                            <constraint firstAttribute="bottom" secondItem="QYJ-cy-ojR" secondAttribute="bottom" id="NI8-a8-HdF"/>
+                            <constraint firstItem="ETw-6F-sPE" firstAttribute="leading" secondItem="vPm-4h-8yo" secondAttribute="trailing" constant="8" id="T8T-43-7vV"/>
+                            <constraint firstItem="uEn-J9-1mi" firstAttribute="top" secondItem="vPm-4h-8yo" secondAttribute="bottom" constant="5" id="WiN-wn-ktH"/>
+                            <constraint firstItem="QYJ-cy-ojR" firstAttribute="leading" secondItem="3Mr-0C-926" secondAttribute="leading" id="fik-aK-jJ4"/>
+                            <constraint firstAttribute="trailing" secondItem="ETw-6F-sPE" secondAttribute="trailing" constant="8" id="li8-M4-HY3"/>
+                            <constraint firstItem="ETw-6F-sPE" firstAttribute="leading" secondItem="uEn-J9-1mi" secondAttribute="trailing" constant="8" id="ob5-O2-BX0"/>
+                            <constraint firstAttribute="bottom" secondItem="uEn-J9-1mi" secondAttribute="bottom" constant="7" id="t1X-kB-kPR"/>
+                            <constraint firstItem="QYJ-cy-ojR" firstAttribute="top" secondItem="3Mr-0C-926" secondAttribute="top" id="yh2-HL-Q5F"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3Mr-0C-926" secondAttribute="bottom" constant="6" id="9uX-iB-2VZ"/>
+                    <constraint firstAttribute="trailing" secondItem="3Mr-0C-926" secondAttribute="trailing" constant="8" id="enm-AU-8pu"/>
+                    <constraint firstItem="3Mr-0C-926" firstAttribute="top" secondItem="rTH-Ay-DBB" secondAttribute="top" constant="6" id="ipL-Ni-vSg"/>
+                    <constraint firstItem="3Mr-0C-926" firstAttribute="leading" secondItem="rTH-Ay-DBB" secondAttribute="leading" constant="8" id="rn4-Hq-o4B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.97635263204574585" green="0.97645848989486694" blue="0.98043638467788696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="beerImage" destination="ETw-6F-sPE" id="cXA-By-giM"/>
+                <outlet property="beerNameLabel" destination="vPm-4h-8yo" id="frN-qF-85Z"/>
+                <outlet property="beerTaglineLabel" destination="uEn-J9-1mi" id="bC4-Yq-xLc"/>
+                <outlet property="cardView" destination="3Mr-0C-926" id="zlQ-Gn-O7S"/>
+                <outlet property="sideView" destination="QYJ-cy-ojR" id="0Z9-nx-N6d"/>
+            </connections>
+            <point key="canvasLocation" x="-111.5" y="-224"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tst" width="381" height="760"/>
+    </resources>
+</document>

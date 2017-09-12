@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeerDetailViewController" customModule="TesteFractal" customModuleProvider="target">
+            <connections>
+                <outlet property="beerDescription" destination="fbw-Do-S93" id="Nfl-ir-hxO"/>
+                <outlet property="beerImage" destination="fi8-NH-ecx" id="5Pv-cN-UMP"/>
+                <outlet property="beerName" destination="c8b-Md-jWd" id="laE-po-Z9c"/>
+                <outlet property="beerTagline" destination="lWU-7A-Di2" id="TWu-E0-Sxl"/>
+                <outlet property="imageTopConstraint" destination="e0D-FG-AJ3" id="Kax-kq-N4N"/>
+                <outlet property="view" destination="Wab-66-Gky" id="5Wl-qX-CLy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Wab-66-Gky">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="c8b-Md-jWd">
+                    <rect key="frame" x="16" y="228" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tagline" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="lWU-7A-Di2">
+                    <rect key="frame" x="16" y="257" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbw-Do-S93">
+                    <rect key="frame" x="16" y="286" width="343" height="365"/>
+                    <color key="backgroundColor" red="0.976352632" green="0.97645848989999995" blue="0.98043638470000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTk-sa-h1f" customClass="CardView" customModule="TesteFractal" customModuleProvider="target">
+                    <rect key="frame" x="78" y="0.0" width="220" height="220"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beer_bottle_filled" translatesAutoresizingMaskIntoConstraints="NO" id="fi8-NH-ecx">
+                            <rect key="frame" x="0.0" y="22" width="220" height="176"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fi8-NH-ecx" firstAttribute="width" secondItem="xTk-sa-h1f" secondAttribute="width" id="Cmt-vo-9Jl"/>
+                        <constraint firstItem="fi8-NH-ecx" firstAttribute="centerY" secondItem="xTk-sa-h1f" secondAttribute="centerY" id="Kmw-ZU-GQs"/>
+                        <constraint firstItem="fi8-NH-ecx" firstAttribute="height" secondItem="xTk-sa-h1f" secondAttribute="height" multiplier="0.8" id="NQl-TU-EXt"/>
+                        <constraint firstItem="fi8-NH-ecx" firstAttribute="centerX" secondItem="xTk-sa-h1f" secondAttribute="centerX" id="Tkp-AU-V6t"/>
+                        <constraint firstAttribute="width" secondItem="xTk-sa-h1f" secondAttribute="height" multiplier="1:1" id="zNf-2h-RJP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.976352632" green="0.97645848989999995" blue="0.98043638470000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fbw-Do-S93" firstAttribute="leading" secondItem="Wab-66-Gky" secondAttribute="leading" constant="16" id="KRH-Pk-Ccv"/>
+                <constraint firstAttribute="trailing" secondItem="c8b-Md-jWd" secondAttribute="trailing" constant="16" id="Xbn-6L-pVw"/>
+                <constraint firstItem="c8b-Md-jWd" firstAttribute="leading" secondItem="Wab-66-Gky" secondAttribute="leading" constant="16" id="ahR-eW-WoA"/>
+                <constraint firstItem="xTk-sa-h1f" firstAttribute="height" secondItem="Wab-66-Gky" secondAttribute="height" multiplier="0.33" id="dtH-TB-Yhk"/>
+                <constraint firstItem="xTk-sa-h1f" firstAttribute="top" secondItem="Wab-66-Gky" secondAttribute="top" id="e0D-FG-AJ3"/>
+                <constraint firstAttribute="trailing" secondItem="fbw-Do-S93" secondAttribute="trailing" constant="16" id="f8b-LK-KFb"/>
+                <constraint firstItem="lWU-7A-Di2" firstAttribute="leading" secondItem="Wab-66-Gky" secondAttribute="leading" constant="16" id="mKA-4y-d7O"/>
+                <constraint firstItem="c8b-Md-jWd" firstAttribute="top" secondItem="xTk-sa-h1f" secondAttribute="bottom" constant="8" symbolic="YES" id="sax-0B-wm3"/>
+                <constraint firstAttribute="trailing" secondItem="lWU-7A-Di2" secondAttribute="trailing" constant="16" id="tJz-7P-TBH"/>
+                <constraint firstItem="fbw-Do-S93" firstAttribute="top" secondItem="lWU-7A-Di2" secondAttribute="bottom" constant="8" id="u89-g0-6uU"/>
+                <constraint firstItem="lWU-7A-Di2" firstAttribute="top" secondItem="c8b-Md-jWd" secondAttribute="bottom" constant="8" id="ual-1G-qbD"/>
+                <constraint firstItem="xTk-sa-h1f" firstAttribute="centerX" secondItem="Wab-66-Gky" secondAttribute="centerX" id="wN1-O1-x2Y"/>
+                <constraint firstAttribute="bottom" secondItem="fbw-Do-S93" secondAttribute="bottom" constant="16" id="wob-jB-455"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="beer_bottle_filled" width="100" height="100"/>
+    </resources>
+</document>
